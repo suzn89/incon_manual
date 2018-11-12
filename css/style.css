@@ -61,7 +61,7 @@ table th{font-size:13px;font-weight:normal}
 button{border:none;background:transparent;cursor:pointer;width:auto;overflow:visible;display:inline-block;zoom:1}
 button::-moz-focus-inner{border:0;padding:0;margin:0}
 a{text-decoration:none}
-a:link {; text-decoration:none;}
+a:link { text-decoration:none;}
 a:visited {text-decoration:none;}
 a:hover { text-decoration:none;}
 a:focus {text-decoration:none;}
@@ -73,24 +73,49 @@ body {
     font-family:'Nanum Gothic','돋움',Dotum,Helvetica,'Apple SD Gothic Neo',sans-serif;
     min-width:1280px;
     color: #666;
+    width: 100%;
 }
 h1 {
     font-weight: bold;
     font-size: 40px;
 }
+/* 홈 화면 */
+.admin_login {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.admin_login .btn__lgin {
+    border: 1px solid #03a6ff;
+    color: #fff;
+    background: #03a6ff;
+}
+
+/* 버튼관련 공통 CSS */
+[class^="btn__"] {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 8px 10px;
+    border-radius: 5px;            
+}
+[class^="btn__"] i {
+    margin-right: 8px;
+}
+
 /* 로그인 */
-.main_login {
+[class^="main_"] {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+[class^="main_"] h1 {
+    margin:  0 0 30px;
+    text-align: center;
+}
+.main_login {
     width: 400px;
     margin: 0px auto;
-    
-
-}
-.main_login h1 {
-    margin:  0 0 30px;
 }
 .main_login label {
     display:inline-block;
@@ -120,6 +145,14 @@ h1 {
     font-weight: bold;
     font-size: 18px;
     background: #03a6ff;
+}
+.main_home {
+    min-width: 1280px;
+}
+.main_home ul { text-align:center;}
+.main_home ul li {
+    display: inline-block;
+    margin: 0 20px;
 }
 input[type="checkbox"] + label {display:inline-block;height:22px;line-height:21px;padding:0 0 0 25px;font-size:14px;background:url(../images/inp_checkbox.gif) no-repeat left center; cursor:pointer}
 input[type="checkbox"]:checked + label {background:url(../images/inp_checkbox_on.gif) no-repeat left center;}
