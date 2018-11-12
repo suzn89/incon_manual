@@ -38,6 +38,37 @@
        url('../fonts/nanum-gothic-v13-korean_latin-800.svg#NanumGothic') format('svg'); /* Legacy iOS */
 }
 
+html,body{width:100%;}
+html{overflow-y:scroll;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table,form,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd{font-family:'Nanum Gothic','돋움',Dotum,Helvetica,'Apple SD Gothic Neo',sans-serif;font-size:13px; color:#666}
+h1, h2, h3, h4 {font-weight:normal}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display:block}
+strong{font-weight:bold !important;}
+img,fieldset{border:0}
+img{vertical-align:middle}
+fieldset{display:block}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+input[type="text"],input[type="number"],input[type="password"],select{vertical-align:middle;border:solid 1px #d0d0d0;}
+input[type="radio"] {vertical-align:middle;}
+textarea{padding:3px; text-align:left; line-height:18px; color:#666; border:solid 1px #d0d0d0;}
+select{border:solid 1px #d0d0d0;}
+hr,legend{display:none}
+caption{overflow:hidden;width:0px;height:0px;padding:0;font-size:0;line-height:0;text-indent:-999px}
+table{border-collapse:collapse;border-spacing:0; width:100%}
+table th{font-size:13px;font-weight:normal}
+button{border:none;background:transparent;cursor:pointer;width:auto;overflow:visible;display:inline-block;zoom:1}
+button::-moz-focus-inner{border:0;padding:0;margin:0}
+a{text-decoration:none}
+a:link {; text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover { text-decoration:none;}
+a:focus {text-decoration:none;}
+a:active { text-decoration:none;}
+.blind,legend,.ir_text,caption{overflow:hidden;width:100%;height:0px;font-size:0;line-height:0;text-indent:-9999px}
+.hidden{visibility:hidden; width:0; height:0;}
+*, :after, :before {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 body {
     font-family:'Nanum Gothic','돋움',Dotum,Helvetica,'Apple SD Gothic Neo',sans-serif;
     min-width:1280px;
@@ -49,27 +80,51 @@ h1 {
 }
 /* 로그인 */
 .main_login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 400px;
     margin: 0px auto;
+    
 
 }
 .main_login h1 {
     margin:  0 0 30px;
 }
 .main_login label {
+    display:inline-block;
     font-size: 14px;
+    color: #cfd2db;
     margin-bottom: 5px;    
 }
-.main_login ul li input[tyle="text"],
-.main_login ul li input[tyle="password"] {
+.main_login ul li {
+    margin-bottom: 15px;
+}
+.main_login ul li input[type="text"],
+.main_login ul li input[type="password"] {
     width: 100%;
     height: 43px;
     font-size: 16px;
-    padding: 5px;
-    border: 1px solid #f4f5f9;
+    padding: 5px 10px;
+    border: 1px solid #dddfe6;
     border-image:initial;
 }
-
+.main_login .btn_login {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    background: #03a6ff;
+}
+input[type="checkbox"] + label {display:inline-block;height:22px;line-height:21px;padding:0 0 0 25px;font-size:14px;background:url(../images/inp_checkbox.gif) no-repeat left center; cursor:pointer}
+input[type="checkbox"]:checked + label {background:url(../images/inp_checkbox_on.gif) no-repeat left center;}
+input[type="text"],
+input[type="password"], select{height:28px;line-height:26px;padding:0 3px;font-size:14px;color:#333;}
 
 
 /* 공통적용 CSS */
