@@ -1,44 +1,228 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>유형별 신고접수 매뉴얼</title>
-    <link href="./css/incon_reset.css" rel="stylesheet" type="text/css">
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>유형별 신고접수 매뉴얼</title>
+<link href="./css/incon_reset.css" rel="stylesheet" type="text/css">
+<link href="./css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 </head>
 <body>
+<header>
+<h1>유형별 신고접수 매뉴얼</h1>
+</header>
+<!-- cont wrap -->
+<div id="cont_wrap">
+	<div id="aside">
+		<h2><img src="./images/police.png" alt="경찰"></h2>
+		<ul>
+			<li><a href="#"><i class="fa fa-bars"></i>매뉴얼 조회</a></li>
+			<li><a href="#"><i class="fa fa-exclamation-triangle"></i>재난유형 매뉴얼 관리</i></a></li>
+			<li><a href="#"><i class="fa fa-check-square-o"></i>체크리스트 관리</i></a></li>
+			<li><a href="#"><i class="fa fa-file"></i>매뉴얼 파일 관리</a></li>
+			<li><a href="#"><i class="fa fa-cog"></i>매뉴얼 관리 권한</a></li>
+			<li><a href="#"><i class="fa fa-info-circle"></i>헬프데스크</a></li>
+		</ul>
+		<ul class="bottomul">
+			<li><a href="#"><i class="fa fa-user"></i>사용자 사용이력</a></li>
+			<li><a href="#"><i class="fa fa-tag"></i>매뉴얼 구분 코드 관리</a></li>
+			<li><a href="#"><i class="fa fa-tags"></i>재난유형 코드 관리</a></li>
+		</ul>
+	</div>
+	<div id="contents">
+		<div class="navi_wrp">
+			<div class="search_area">
+				<label>재난유형검색</label>
+				<input type="text" id="srchform" name="srchform" title="재난유형검색">
+				<button type="button" onclick="" class="btn_search"><span class="ir">검색</span></button>
+			</div>
+			<h2 class="admtit2">재난유형별 매뉴얼 관리</h2>
+		</div>
+		<!-- // navi wrp -->
+		<div class="ctwrap">
+			<div class="txtbox tablestyle1">
+				<table>
+				<caption>체크테이블</caption>
+				<colgroup>
+				<col width="30px">
+				<col width="50px">
+				<col width="30%">
+				<col width="*">
+				<col width="90px">
+				</colgroup>
+				<thead>
+				<tr>
+					<th class="numtd">
+						 No.
+					</th>
+					<th class="chkbox_area">
+						<em class="chked_area">
+						<input type="checkbox" name="id01" id="id01">
+						<label for="id01" class="txt_out">체크</label>
+						</em>
+					</th>
+					<th>
+						 재난코드
+					</th>
+					<th>
+						 재난명
+					</th>
+					<th>
+						 등록일
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="numtd">
+						 2
+					</td>
+					<td class="chkbox_area">
+						<em class="chked_area">
+						<input type="checkbox" name="id01" id="id01">
+						<label for="id01" class="txt_out">체크</label>
+						</em>
+					</td>
+					<td class="txc">
+						 402
+					</td>
+					<td class="txc">
+						 학교폭력
+					</td>
+					<td>
+						 2018.11.02
+					</td>
+				</tr>
+				<tr>
+					<td class="numtd">
+						 2
+					</td>
+					<td class="chkbox_area">
+						<em class="chked_area">
+						<input type="checkbox" name="id01" id="id01">
+						<label for="id01" class="txt_out">체크</label>
+						</em>
+					</td>
+					<td class="txc">
+						 402
+					</td>
+					<td class="txc">
+						 학교폭력
+					</td>
+					<td>
+						 2018.11.02
+					</td>
+				</tr>
+				<tr>
+					<td class="numtd">
+						 2
+					</td>
+					<td class="chkbox_area">
+						<em class="chked_area">
+						<input type="checkbox" name="id01" id="id01">
+						<label for="id01" class="txt_out">체크</label>
+						</em>
+					</td>
+					<td class="txc">
+						 402
+					</td>
+					<td class="txc">
+						 학교폭력
+					</td>
+					<td>
+						 2018.11.02
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<!-- //txtbox -->
+			<div class="btn_right">
+				<a href="#" class="btntype3 fl"><i class="fa fa-trash"></i>삭제</a>
+				<a href="#" class="btntype3"><i class="fa fa-question"></i>문의</a>
+				<a href="#" class="btntype3"><i class="fa fa-stop"></i>사용중지</a>
+				<a href="#" class="btntype2"><i class="fa fa-plus"></i>매뉴얼등록</a>
+				<a href="#" class="btntype1"><i class="fa fa-pencil"></i>매뉴얼수정</a>
+				<a href="#" class="btntype3"><i class="fa fa-trash"></i>매뉴얼삭제</a>
+				<a href="#" class="btntype1"><i class="fa fa-save"></i>히스토리저장</a>
+			</div>
+			<br>
+			<br>
+			<div class="warningBox">
+				 체크리스트를 정말로 삭제 하시겠습니까?
+				<div class="btn_center">
+					<a href="#" class="btntype3"><i class="fa fa-cancle"></i>취소</a>
+					<a href="#" class="btntype3"><i class="fa fa-trash"></i>매뉴얼삭제</a>
+				</div>
+			</div>
+			<div class="tablestyle1">
+                    <table summary="">
+                        <caption>등록폼</caption>
+                        <colgroup>
+                            <col width="15%">
+                            <col width="35%">
+                            <col width="15%">
+                            <col width="35%">
+                        </colgroup>
+                    
+                        <tbody>
+                            <tr>
+                                <th>재난 CODE</th>
+                                <td>
+                                       <input type="text" style="width:100%;" id="title">
+                                </td>
+                                <th>재난명</th>
+                                <td><select name="" id="" style="width:100%">
+                                        <option value="">선택하세요.</option>
+                                        <option value="">헤더이미지1</option>
+                                        <option value="">헤더이미지2</option>
+                                        <option value="">헤더이미지3</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <th>매뉴얼구분</th>
+                                <td><select name="" id="" style="width:210px;">
+                                        <option value="">선택하세요.</option>
+                                        <option value="">헤더이미지1</option>
+                                        <option value="">헤더이미지2</option>
+                                        <option value="">헤더이미지3</option>
+                                    </select></td>
+                                <th>등록일</th>
+                                <td><span>2018.01.01</span></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    
+                </div>
 
-    <header>
-        <h1>유형별 신고접수 매뉴얼</h1>
-    </header>
-    <!-- cont wrap -->
-    <div id="cont_wrap">
-        <div id="aside">
-            <h2><img src="./images/police.png" alt="경찰"></h2>
-            <ul>
-                <li><a href="#"><i class="fa fa-bars"></i>매뉴얼 조회</a></li>
-                <li><a href="#"><i class="fa fa-exclamation-triangle"></i>재난유형 매뉴얼 관리</i></a></li>
-                <li><a href="#"><i class="fa fa-check-square-o"></i>체크리스트 관리</i></a></li>
-                <li><a href="#"><i class="fa fa-file"></i>매뉴얼 파일 관리</a></li>
-                <li><a href="#"><i class="fa fa-cog"></i>매뉴얼 관리 권한</a></li>
-                <li><a href="#"><i class="fa fa-info-circle"></i>헬프데스크</a></li>
-            </ul>
-            <ul class="bottomul">
-                <li><a href="#"><i class="fa fa-user"></i>사용자 사용이력</a></li>
-                <li><a href="#"><i class="fa fa-tag"></i>매뉴얼 구분 코드 관리</a></li>
-                <li><a href="#"><i class="fa fa-tags"></i>재난유형 코드 관리</a></li>
-            </ul>
+                <div class="editorwrap">
+                    <h2 class="editortit">내 용</h2>
+                        [필수질문]<br>
+                        ▶ (위치정보) 지금 계신 곳이 어디입니까? 경찰관 출동이 필요한 장소는 
+                            어디입니까?<br>
+                        ▶ (피해정보)다친곳이 있습니까? 구급차를 보내드리겠습니다.<br>
+                        ▶ (범인정보) 범인은 현장에 있습니까? 인상착의, 도주방법, 도주방향, 발
+                            생시간, 흉기소지 여부
+                            차량색상, 차종, 차량번호 보셨습니까?<br>
+                     
+                     [선택질문]<br>
+                        ▶ 용의자와 관계, 용의자 말투, 목격자 여부, 기타 범인 관련 추정사항
+                </div>
+                <div class="btn_right">
+						<span class="fl ftred">※ 히스토리를 남길 필요가 없는 오타 수정은 매뉴얼 수정으로 저장해 주세요.</span>
+						<a href="#" class="btntype2">목록</a>
+                    </div> 
 
-        </div>
-        <div id="contents">
 
-        </div>
-    </div>
-    <!-- // cont wrap -->
-
+ 
+		</div>
+		<!-- ctwrap -->
+	</div>
+	<!-- // contents -->
+</div>
+<!-- // cont wrap -->
 </body>
 </html>
