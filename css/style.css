@@ -422,6 +422,31 @@ header h1 { color: #fff;}
 .tablestyle1 table tbody td{padding:10px 8px;font-size:13px;}
 .tablestyle1 table tbody td .ellipsis {overflow:hidden;width:220px;text-align:left;text-overflow:ellipsis;white-space:nowrap;}
 
+.tablestyle2 {width:100%; border-top:solid 2px #656565;border-bottom:solid 1px #656565;}
+.tablestyle2 table{width:100%;}
+.tablestyle2 table input[type="text"]{ height:24px; padding:3px; color:#888888; }
+.tablestyle2 table thead th{padding:19px 0; text-align:center; background:#f4f4f4; color:#333333; border-bottom:solid 1px #656565; font-size:16px; }
+.tablestyle2 table tbody td{padding:19px 0; text-align:left; color:#666666; border-top:solid 1px #ddd; font-size:14px;}
+.tablestyle2 table tbody td.tit{padding:19px 10px;  text-align:left; color:#333; }
+.tablestyle2 table tbody td.tit a{color:#333;}
+.tablestyle2 table tbody td.tit a:hover{text-decoration:underline;}
+.tablestyle2.line table {border-right:1px solid #ddd;}
+.tablestyle2.line table tbody td {border-left:1px solid #ddd;}
+.tablestyle2 .chkbox_area {position:relative; text-align: center;}
+.tablestyle2 .txt_out {width:0px; text-indent:-999em}
+.tablestyle2.type1 {border-bottom:1px solid #ddd}
+.tablestyle2.type1 thead th {border-right:1px solid #ddd; border-bottom:1px solid #ddd}
+.tablestyle2.type1 thead th:first-child {border-left:1px solid #ddd}
+.tablestyle2.type1 tbody th {border-right:1px solid #ddd;  font-size:16px; color:#333; text-align:center}
+.tablestyle2.type1 tbody th:first-child {border-left:1px solid #ddd}
+.tablestyle2.type1 td {border-right:1px solid #ddd; font-size:14px}
+.tablestyle2.type1 td:first-child {border-left:1px solid #ddd}
+.tablestyle2 table thead th{padding:10px 0;text-align:center;font-size:14px;background:#f4f4f4;}
+.tablestyle2 table tbody td{padding:10px 8px;font-size:13px;}
+.tablestyle2 table tbody td .ellipsis {overflow:hidden;width:220px;text-align:left;text-overflow:ellipsis;white-space:nowrap;}
+
+
+
 /* 버튼 css */
 .btntype1{display:inline-block;padding:0 32px; line-height:34px; font-size:13px; font-weight:700;color:#fefefe;background:#656565; vertical-align:middle; }
 .btntype2{display:inline-block;min-width:70px;padding:0 15px;text-align:center;line-height:34px;font-size:14px; font-weight:700;color:#fefefe;background:#4ea1d3;border:solid 1px #4094c7; vertical-align:middle;}
@@ -437,6 +462,11 @@ header h1 { color: #fff;}
 .btn_center{margin-top:15px; width:100%; text-align:center;}
 .btn_left{margin-top:15px; width:100%; text-align:left;}
 
+.btn_left:after, .btn_right:after, .btn_center:after {
+    content: '';
+    clear: both;   
+    display: block; 
+}
 
 /* 공통적용 CSS */
 .fl {float:left !important}
