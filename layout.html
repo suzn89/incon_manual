@@ -153,71 +153,229 @@
 			<div class="warningBox">
 				 체크리스트를 정말로 삭제 하시겠습니까?
 				<div class="btn_center">
-					<a href="#" class="btntype3"><i class="fa fa-cancle"></i>취소</a>
+					<a href="#" class="btntype3"><i class="fa fa-close"></i>취소</a>
 					<a href="#" class="btntype3"><i class="fa fa-trash"></i>매뉴얼삭제</a>
 				</div>
 			</div>
 			<div class="tablestyle1">
-                    <table summary="">
-                        <caption>등록폼</caption>
-                        <colgroup>
-                            <col width="15%">
-                            <col width="35%">
-                            <col width="15%">
-                            <col width="35%">
-                        </colgroup>
-                    
-                        <tbody>
-                            <tr>
-                                <th>재난 CODE</th>
-                                <td>
-                                       <input type="text" style="width:100%;" id="title">
-                                </td>
-                                <th>재난명</th>
-                                <td><select name="" id="" style="width:100%">
-                                        <option value="">선택하세요.</option>
-                                        <option value="">헤더이미지1</option>
-                                        <option value="">헤더이미지2</option>
-                                        <option value="">헤더이미지3</option>
-                                    </select></td>
-                            </tr>
-                            <tr>
-                                <th>매뉴얼구분</th>
-                                <td><select name="" id="" style="width:210px;">
-                                        <option value="">선택하세요.</option>
-                                        <option value="">헤더이미지1</option>
-                                        <option value="">헤더이미지2</option>
-                                        <option value="">헤더이미지3</option>
-                                    </select></td>
-                                <th>등록일</th>
-                                <td><span>2018.01.01</span></td>
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                    
-                </div>
-
-                <div class="editorwrap">
-                    <h2 class="editortit">내 용</h2>
-                        [필수질문]<br>
-                        ▶ (위치정보) 지금 계신 곳이 어디입니까? 경찰관 출동이 필요한 장소는 
-                            어디입니까?<br>
-                        ▶ (피해정보)다친곳이 있습니까? 구급차를 보내드리겠습니다.<br>
-                        ▶ (범인정보) 범인은 현장에 있습니까? 인상착의, 도주방법, 도주방향, 발
-                            생시간, 흉기소지 여부
-                            차량색상, 차종, 차량번호 보셨습니까?<br>
-                     
-                     [선택질문]<br>
-                        ▶ 용의자와 관계, 용의자 말투, 목격자 여부, 기타 범인 관련 추정사항
-                </div>
-                <div class="btn_right">
-						<span class="fl ftred">※ 히스토리를 남길 필요가 없는 오타 수정은 매뉴얼 수정으로 저장해 주세요.</span>
-						<a href="#" class="btntype2">목록</a>
-                    </div> 
-
-
- 
+				<table summary="">
+				<caption>등록폼</caption>
+				<colgroup>
+				<col width="15%">
+				<col width="35%">
+				<col width="15%">
+				<col width="35%">
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>
+						 재난 CODE
+					</th>
+					<td>
+						<input type="text" style="width:100%;" id="title">
+					</td>
+					<th>
+						 재난명
+					</th>
+					<td>
+						<select name="" id="" style="width:100%">
+							<option value="">선택하세요.</option>
+							<option value="">헤더이미지1</option>
+							<option value="">헤더이미지2</option>
+							<option value="">헤더이미지3</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						 매뉴얼구분
+					</th>
+					<td>
+						<select name="" id="" style="width:210px;">
+							<option value="">선택하세요.</option>
+							<option value="">헤더이미지1</option>
+							<option value="">헤더이미지2</option>
+							<option value="">헤더이미지3</option>
+						</select>
+					</td>
+					<th>
+						 등록일
+					</th>
+					<td>
+						<span>2018.01.01</span>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						 제목
+					</th>
+					<td colspan="3">
+						<input type="text" style="width:100%;" id="title">
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="editorwrap">
+				<h2 class="editortit">내 용</h2>
+				 [필수질문]<br>
+				 ▶ (위치정보) 지금 계신 곳이 어디입니까? 경찰관 출동이 필요한 장소는 어디입니까?<br>
+				 ▶ (피해정보)다친곳이 있습니까? 구급차를 보내드리겠습니다.<br>
+				 ▶ (범인정보) 범인은 현장에 있습니까? 인상착의, 도주방법, 도주방향, 발 생시간, 흉기소지 여부 차량색상, 차종, 차량번호 보셨습니까?<br>
+				 [선택질문]<br>
+				 ▶ 용의자와 관계, 용의자 말투, 목격자 여부, 기타 범인 관련 추정사항
+			</div>
+			<div class="btn_right">
+				<span class="fl ftred">※ 히스토리를 남길 필요가 없는 오타 수정은 매뉴얼 수정으로 저장해 주세요.</span>
+				<a href="#" class="btntype2">목록</a>
+			</div>
+			<!-- 라디오박스 있는 리스트 -->
+			<div class="txtbox tablestyle1">
+				<table>
+				<caption>체크테이블</caption>
+				<colgroup>
+				<col width="50px">
+				<col width="*">
+				<col width="200px">
+				</colgroup>
+				<thead>
+				<tr>
+					<th class="numtd">
+						 No.
+					</th>
+					<th>
+						 체크내용
+					</th>
+					<th>
+						 사용여부
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="numtd">
+						 1
+					</td>
+					<td>
+						 최인접 순찰차 우선 출동지령 여부
+					</td>
+					<td class="radio_area txc">
+						<input type="radio" name="id08" id="id08">
+						<label for="id08">사용</label>
+						<input type="radio" name="id09" id="id09">
+						<label for="id09">미사용</label>
+					</td>
+				</tr>
+				<tr>
+					<td class="numtd">
+						 1
+					</td>
+					<td>
+						 지구대장 · 파출소장(순찰팀장) 및 관할 순찰차, 형기차, 여청수사팀 출동
+					</td>
+					<td class="radio_area txc">
+						<input type="radio" name="id08" id="id08">
+						<label for="id08">사용</label>
+						<input type="radio" name="id09" id="id09">
+						<label for="id09">미사용</label>
+					</td>
+				</tr>
+				<tr>
+					<td class="numtd">
+						 1
+					</td>
+					<td>
+						 최인접 순찰차 우선 출동지령 여부
+					</td>
+					<td class="radio_area txc">
+						<input type="radio" name="id08" id="id08">
+						<label for="id08">사용</label>
+						<input type="radio" name="id09" id="id09">
+						<label for="id09">미사용</label>
+					</td>
+				</tr>
+				<tr>
+					<td class="numtd">
+						 1
+					</td>
+					<td>
+						 지구대장 · 파출소장(순찰팀장) 및 관할 순찰차, 형기차, 여청수사팀 출동
+					</td>
+					<td class="radio_area txc">
+						<input type="radio" name="id08" id="id08">
+						<label for="id08">사용</label>
+						<input type="radio" name="id09" id="id09">
+						<label for="id09">미사용</label>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<!-- //txtbox -->
+			<hr/>
+			<hr/>
+			<div class="tablestyle1">
+				<table summary="">
+				<caption>등록폼</caption>
+				<colgroup>
+				<col width="15%">
+				<col width="35%">
+				<col width="15%">
+				<col width="35%">
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>
+						 재난 CODE
+					</th>
+					<td>
+						<input type="text" style="width:100%;" id="title">
+					</td>
+					<th>
+						 재난명
+					</th>
+					<td>
+						<select name="" id="" style="width:100%">
+							<option value="">선택하세요.</option>
+							<option value="">헤더이미지1</option>
+							<option value="">헤더이미지2</option>
+							<option value="">헤더이미지3</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						 매뉴얼구분
+					</th>
+					<td>
+						<select name="" id="" style="width:210px;">
+							<option value="">선택하세요.</option>
+							<option value="">헤더이미지1</option>
+							<option value="">헤더이미지2</option>
+							<option value="">헤더이미지3</option>
+						</select>
+					</td>
+					<th>
+						 사용여부
+					</th>
+					<td class="radio_area">
+						<input type="radio" name="id08" id="id08">
+						<label for="id08">사용</label>
+						<input type="radio" name="id09" id="id09">
+						<label for="id09">미사용</label>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						 제목
+					</th>
+					<td colspan="3">
+						<input type="text" style="width:100%;" id="title">
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
 		</div>
 		<!-- ctwrap -->
 	</div>

@@ -183,6 +183,36 @@ input[type="checkbox"]+label {
 input[type="checkbox"]:checked+label {
 	background:url(../images/inp_checkbox_on.png) no-repeat left center;
 }
+.radio_area input[type='radio'] {
+	display:none;
+}
+.radio_area input[type='radio']+label::before {
+		content:' ';
+		display:inline-block;
+		width:18px;
+		height:18px;
+	vertical-align:middle;
+	/* img 아이콘 항상 세로정렬을 하기 위함 */ 	margin:0px 5px 0 0;
+		background: url(../images/inp_radio.png) no-repeat;
+	/* 하위 브라우저용 img */
+}
+.radio_area input[type='radio']:checked+label::before {
+	/* 가짜 라디오버튼 체크했을 때 */
+	background:url(../images/inp_radio_on.png) no-repeat;
+	/* 하위 브라우저용 img */
+	background-position:0px 0;
+}
+.radio_area input[type='radio']+label {
+	margin-right:10px;
+}
+.radio_area input[type='radio']+label:last-child {
+	margin-right:0;
+}
+.radio_area .txt_out {
+	width:0;
+	text-indent:-999em;
+	font-size:0;
+}
 input[type="text"],input[type="password"],select {
 	height:28px;
 	line-height:26px;
@@ -319,10 +349,9 @@ header h1 {
 	background:#fff;
 }
 .ctwrap {
-    padding:30px;
-    overflow-y: scroll;
-    height: calc(100% - 110px)
-
+	padding:30px;
+	overflow-y:scroll;
+	height:calc(100% - 110px)
 }
 #aside>h2 {
 	text-align:center;
@@ -725,28 +754,28 @@ header h1 {
 	font-weight:bold;
 	color:#52616a;
 	text-align:left;
-	padding: 40px 0 0 30px
+	padding:40px 0 0 30px
 }
 .item_form {
-    border-radius: 5px;
-    border: 1px solid #f4f5f9;
-    width: 100%;
-    padding: 30px 0;
-    margin-bottom: 30px;
+	border-radius:5px;
+	border:1px solid #f4f5f9;
+	width:100%;
+	padding:30px 0;
+	margin-bottom:30px;
 }
 .editorwrap {
-    padding: 10px;
-    margin-top: 10px;
-    width: 100%;
-    border: 1px solid #dadada;
+	padding:10px;
+	margin-top:10px;
+	width:100%;
+	border:1px solid #dadada;
 }
-.editortit { 
-    border-bottom: 1px solid #dadada;
-    text-align: center;
-    padding: 15px 0;
-    font-weight: bold;
-    color: #252c41;
-    margin-bottom: 20px;
+.editortit {
+	border-bottom:1px solid #dadada;
+	text-align:center;
+	padding:15px 0;
+	font-weight:bold;
+	color:#252c41;
+	margin-bottom: 20px;
 }
 /* 버튼 css */
 .btntype1 {
@@ -863,18 +892,18 @@ header h1 {
 .btn_left:after,.btn_right:after,.btn_center:after {
 	content:'';
 	clear:both;
-	display: block;
+	display:block;
 }
-.btn_right i, .btn_left i, .btn_center i{
-    margin-right: 10px;
+.btn_right i,.btn_left i,.btn_center i {
+	margin-right:10px;
 }
 .warningBox {
-    padding: 30px 0;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid #f4f5f9;
-    text-align: center;
+	padding:30px 0;
+	font-size:16px;
+	font-weight:bold;
+	border-radius:5px;
+	border:1px solid #f4f5f9;
+	text-align: center;
 }
 /* 공통적용 CSS */
 .fl {
@@ -939,11 +968,11 @@ header h1 {
 	font-size:18px !important
 }
 .ft22 {
-	font-size: 122x !important
+	font-size:122x !important
 }
-.txc { 
-    text-align: center !important;
+.txc {
+	text-align:center !important;
 }
 .numtd {
-    text-align: center !important;
+	text-align: center !important;
 }
