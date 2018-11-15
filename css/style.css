@@ -440,7 +440,10 @@ header h1 {
 	margin-right:20px;
 }
 .search_area label {
+	float: left;
+	margin-top: 11px;
 	margin-right:10px;
+	font-size: 14px;
 }
 .search_area input {
 	padding:8 10px;
@@ -461,6 +464,10 @@ header h1 {
 	top:0;
 	right:10px;
 	background: url(../images/btn_srch.png) no-repeat 0 0;
+}
+.search_area select {
+	height: 35px;
+	line-height: 35px;
 }
 /* contents 내부 2단 칼럼 */
 #colmn2 {
@@ -777,16 +784,107 @@ header h1 {
 	color:#252c41;
 	margin-bottom: 20px;
 }
+/*페이징*/
+.tablepaging {
+	position:relative;
+}
+.tablepaging .pagebt {
+	display:block;
+	position:absolute;
+	right:0;
+	top:-25px;
+	z-index:10;
+}
+.tablepaging .pagebt+.pagebt {
+	right:110px;
+}
+.paging {
+	width:100%;
+	margin-top:30px;
+	text-align:center;
+	position:relative;
+}
+.paging a {
+	display:inline-block;
+	width:33px;
+	height:31px;
+	margin-left:2px;
+	font-size:12px;
+	text-align:center;
+	line-height:31px;
+	font-weight:normal;
+	color:#7D7D7D;
+	border:solid 1px #d0d0d0;
+}
+.paging a:hover {
+	border:solid 1px #538fc7;
+	color:#fff;
+	background:#538fc7;
+}
+.paging strong {
+	display:inline-block;
+	width:33px;
+	height:31px;
+	margin-left:2px;
+	font-size:12px;
+	text-align:center;
+	line-height:31px;
+	font-weight:600;
+	border:solid 1px #538fc7;
+	color:#fff;
+	background:#538fc7;
+}
+.paging a.pprev {
+	width:40px;
+	height:31px;
+	margin:0;
+	border:0;
+	background:url(../images/page_L.png) no-repeat left top;
+}
+.paging a.pprev:hover {
+	background-color:none;
+}
+.paging a.prev:hover {
+	background-color:none;
+}
+.paging a.prev {
+	width:40px;
+	height:31px;
+	margin:0;
+	border:0;
+	background:url(../images/page_L.png) no-repeat -40px top;
+}
+.paging a.next {
+	width:41px;
+	height:31px;
+	margin:0;
+	border:0;
+	background:url(../images/page_R.png) no-repeat left top;
+}
+.paging a.next:hover {
+	background-color:none;
+}
+.paging a.nnext:hover {
+	background-color:none;
+}
+.paging a.nnext {
+	width:41px;
+	height:31px;
+	margin:0;
+	border:0;
+	background: url(../images/page_R.png) no-repeat -42px top;
+}
 /* 버튼 css */
 .btntype1 {
 	display:inline-block;
 	padding:0 32px;
 	line-height:34px;
-	font-size:13px;
+	font-size:14px;
 	font-weight:700;
 	color:#fefefe;
 	background:#656565;
 	vertical-align:middle;
+	border: 1px solid #656565
 }
 .btntype2 {
 	display:inline-block;
