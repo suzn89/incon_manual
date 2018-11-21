@@ -876,6 +876,24 @@ header h1 {
 	border:0;
 	background: url(../images/page_R.png) no-repeat -42px top;
 }
+
+.no_wrap {
+	width: 100%;
+	margin: 20px;
+	border-radius: 5px;
+	background: #fafafc;
+	border: 1px solid #f4f5f9;
+}
+.no_wrap p {
+	padding: 150px 0;
+	font-size: 15px;
+	color: #a8a8a8;
+	text-align: center;
+}
+.no_wrap p i {
+	margin-right: 10px;
+}
+
 /* 버튼 css */
 .btntype1 {
 	display:inline-block;
