@@ -204,7 +204,9 @@ input[type="checkbox"]:checked+label {
 }
 .radio_area input[type='radio']+label {
 	margin-right:10px;
+
 }
+.radio_area label {display: inline;}
 .radio_area input[type='radio']+label:last-child {
 	margin-right:0;
 }
