@@ -509,7 +509,7 @@ header h1 {
 	height:100%;
 	padding:30px;
 	margin-left:220px;
-	overflow-y:scroll;
+	overflow-y:auto;
 	font-size:14px;
 }
 #colmn2 .i_right h6 {
